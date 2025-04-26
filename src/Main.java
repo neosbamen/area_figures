@@ -1,10 +1,18 @@
 import java.util.Scanner;
 
-public class Main {
-    public static void main(String[] args) {
 
-        Scanner scanner =new Scanner(System.in);
-        CalculateAreaTriangle calculateAreaTriangle=new CalculateAreaTriangle();
+public class Main extends  AreaCuadrado{
+    public static void main(String[] args) {
+      Scanner scanner = new Scanner(System.in);
+      CalculateAreaTriangle calculateAreaTriangle=new CalculateAreaTriangle();
+
+        int lado;
+
+        System.out.println("Dime el lado del cuadrado cuya area quieres calcular");
+        lado = scanner.nextInt();
+        scanner.nextLine();
+      
+        areaCuadrado(lado);
 
         System.out.println("ingresa la base del triangulo");
         int base=scanner.nextInt();
@@ -16,5 +24,5 @@ public class Main {
         int result=calculateAreaTriangle.calculate(base,altura);
 
         System.out.println(result);
-    }
-}
+        }
+        }
