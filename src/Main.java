@@ -5,6 +5,7 @@ public class Main extends  AreaCuadrado{
     public static void main(String[] args) {
       Scanner scanner = new Scanner(System.in);
       CalculateAreaTriangle calculateAreaTriangle=new CalculateAreaTriangle();
+      AreaCirculo areaCirculo=new AreaCirculo();
 
         int lado;
 
@@ -24,5 +25,11 @@ public class Main extends  AreaCuadrado{
         int result=calculateAreaTriangle.calculate(base,altura);
 
         System.out.println(result);
+
+      System.out.println("Ingresa el radio del circulo");
+      double radius=scanner.nextDouble();
+      scanner.close();
+
+      System.out.println(areaCirculo.areaCirculo(radius));
         }
         }
