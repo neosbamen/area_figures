@@ -5,8 +5,8 @@ public class Main extends AreaCuadrado {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        CalculateAreaTriangle calculateAreaTriangle=new CalculateAreaTriangle();
-        AreaCirculo areaCirculo=new AreaCirculo();
+        CalculateAreaTriangle calculateAreaTriangle = new CalculateAreaTriangle();
+        AreaCirculo areaCirculo = new AreaCirculo();
         AreaRectangulo areaRectangulo = new AreaRectangulo();
         int lado;
         int baseRect;
@@ -29,13 +29,13 @@ public class Main extends AreaCuadrado {
         System.out.println(result);
 
 
-      System.out.println("Ingresa el radio del circulo");
-      double radius=scanner.nextDouble();
-    
+        System.out.println("Ingresa el radio del circulo");
+        double radius = scanner.nextDouble();
 
-      System.out.println(areaCirculo.areaCirculo(radius));
-      
-      System.out.println("Introduce la base del rectangulo cuya area quieres calcular");
+
+        System.out.println(areaCirculo.areaCirculo(radius));
+
+        System.out.println("Introduce la base del rectangulo cuya area quieres calcular");
         baseRect = scanner.nextInt();
         scanner.nextLine();
         System.out.println("Introduce la altura del rectangulo cuya area quieres calcular");
@@ -46,6 +46,6 @@ public class Main extends AreaCuadrado {
                 + " es: " + resultadoRectangulo);
 
         scanner.close();
-        }
-        };{};
+    }
+}
 
